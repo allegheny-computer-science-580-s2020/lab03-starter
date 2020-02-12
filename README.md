@@ -109,7 +109,7 @@ document, you should commit your file using a `git
 commit` command. Now, to create your first tag for this repository you could
 type 
 
-`git tag ProposalDiagrams-jjumadinova-1.0.0`. 
+`git tag ProposalDiagrams-jjumadinova-1.0.0`
 
 Of course, you should
 substitute your user name for `jjumadinova` when you create the tag. At this point,
