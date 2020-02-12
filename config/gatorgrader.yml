@@ -1,0 +1,18 @@
+---
+name: cs580s2020_lab03
+break: true
+fastfail: false
+indent: 4
+---
+src:
+    ProposalDiagrams.tex:
+        CountFileWords --count 200
+        ConfirmFileExists
+        MatchFileFragment --fragment "TODO" --count 0 --exact
+        MatchFileFragment --fragment "Your Name" --count 0 --exact
+        MatchFileFragment --fragment "Proposal Title" --count 0 --exact
+        MatchFileFragment --fragment "Add your diagram and descriptive text  here." --count 0 --exact
+        MatchFileFragment --fragment "usepackage{tikz}" --count 1
+        MatchFileFragment --fragment "\includegraphics" --count 2
+        MatchFileFragment --fragment "caption" --count 2
+CountCommits --count 6
